@@ -1,0 +1,484 @@
+/* configuraçao do cabeçalho/menu */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #FFF5E1;
+  /* font-family: Arial, sans-serif; */
+  line-height: 1.6;
+  margin: 0; 
+  overflow-x: hidden; 
+}
+.cima_sociais .fa-facebook{
+  margin-left: 500px;
+}
+#cima{
+  position: sticky;
+  z-index: 1000; /*cabeçalho acima do conteúdo */
+  top: 0;
+  width: 100vw;
+  height: 75px;
+  padding: 20px 5%;
+  background-color: #8B0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+}
+i a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav ul{
+  padding: 25px;
+  display: flex;
+  list-style: none ;
+  gap: 37px;
+}
+.menu_item a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu_item a:hover{
+  font-size: large;
+  transition: 15ms;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* Fim do menu */
+/* inicio do corpo parte do banner */
+
+#banner { 
+  /* overflow: hidden;  */
+  width: 100vw; 
+  /* overflow-x: hidden;  */
+  position: relative;
+  width: 500%;
+  margin-bottom: -5px;
+  left: 0;
+  display: flex; 
+  animation: 10s animacao infinite; 
+}
+#banner img {
+  width: 100%; 
+  height: 70vh; 
+  object-fit: cover; 
+}
+
+@keyframes animacao {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+/* fim do banner
+inicio do quem somos */
+
+#historia{
+  width: 95vw;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.quem_somos{
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  padding-top: 10px;
+}
+#historia p{
+  /* font-family: Arial, Helvetica, sans-serif; */
+  padding: 10px 70px;
+  margin: 5px 10px;
+  display: block;
+  text-align: justify;
+  color: #5D4037;
+}
+
+/* fim do quem somos */
+/* inicio das carnes */
+
+#C_carne{
+  height: 60px;
+  margin: 6px;
+}
+#H_historia{
+  height: 60px;
+  margin: 6px;
+}
+/* div principal */
+.pai {
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.pai h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.pai h2{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+/* classe para deixa os cards um ao lado do outro */
+.conjunto_carne {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+.preco {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgba(133, 53, 0, 0.795);
+}
+#d_mar{
+  font-size: 28px;
+}
+
+#o{
+ margin-top: 20px;
+  font-size: 28px;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.card .frango{
+  height: 52%;
+}
+.card .Cbovina{
+  height: 52%;
+}
+.card .Cexotico{
+  height: 52%;
+}
+.card .acerto{
+  height: 60%;
+}
+.card .acertoo{
+  height: 52%;
+}
+.card_conteudo {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.card_conteudo h2 {
+    margin: 6px 0;
+    color: #333;
+}
+.card_conteudo p {
+    margin: 1px 0;
+    color: #667;
+}
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Duvidas frequentes inicio */
+.duvidas_freq {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(90, 5, 248, 0.1);
+  background-color: white;
+}
+.duvidas_h1{
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+.item {
+  margin-bottom: 9px;
+  border-bottom: 1.5px solid #667;
+  padding-bottom: 9px;
+  /* display: flex; */
+}
+.pergunta {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  color: #5D4037;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resp {
+  display: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  color: #3d2f2f;
+}
+.resp.mostrar {
+  display: block;
+  /* background-color: wheat; */
+}
+.pergunta.ativa{
+ background-color: #8B0000;
+ color: #fff;
+}
+.pergunta.ativa .fa-chevron-down{
+  display: none;
+}
+.pergunta.ativa .fa-chevron-up {
+  display: inline;
+}
+
+/* Inicio do formulario */
+.formulario{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contato{
+  height: 60px;
+  margin: 6px
+}
+.contato_h1{
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+.pai_form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color:#5D4037;
+}
+.pai_form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.pai_form .ppp input{
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.pai_form select {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.pai_form input  {
+  margin-right: 5px;
+}
+.pai_form .radio{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 4px;
+
+}
+.pai_form .infomacao {
+  margin-bottom: 5px;
+}
+.pai_form button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FF4500;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.pai_form button:hover {
+  background-color: #5D4037;
+}
+
+/* escolha de genero */
+.circulo_b {
+  width: 12px;
+  height: 12px; 
+  border-radius: 100%; 
+  border: 1px solid rgb(0, 0, 0); 
+  background-color: #ffffff; 
+  cursor: pointer; 
+ margin: 3px;
+}
+.circulo_b.selectedd {
+  background-color: orange;
+  border-color: #000000; 
+}
+.lgen {
+  margin-left: 50px;
+  padding-bottom: 20px;
+  /* display: inline-block; */
+}
+.gen{
+  color: #5D4037;
+  font-weight: bold;
+}
+.sex{
+  text-align: center;
+  align-items: center;
+  max-height: 10px;
+}
+
+.dropdown{
+  min-width: 7em;
+  position: relative;
+}
+.dropdown *{
+  box-sizing: border-box;
+}
+.selectt{
+  color: #5D4037;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  cursor: pointer;
+  padding: 0.5em;
+  transition: background 0.3s;
+  margin-left: 1px;
+ 
+}
+.selectt-clicked{
+  box-shadow:  0 0 0.8em wheat;
+}
+.selectt:hover{
+  background-color: #5D4037;
+  color: white;
+}
+.caret{
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #5D4037;
+  transition: 0.3s;
+}
+.selectt:hover .caret{
+  border-top: 7px solid rgb(255, 255, 255);
+}
+.caret-rotate{
+  transform: rotate(180deg)
+}
+.menu{
+  list-style: none;
+  background: #ffffff;
+  border: 0.5px solid #667;
+  border-radius: 0.5em;
+  position:absolute;
+  top: 2.5em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+.menu li{
+  padding: 5px 10px;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 16px;
+}
+.menu li:hover{
+  background-color: #667;
+  font-weight: bold;
+}
+.active{
+  background-color: #ffffff;
+}
+.menu-open{
+  display: block;
+  opacity: 1;
+}
+
+.avo{
+  display: flex;
+}
+#wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3{
+  margin-right: auto;
+}
+.texto_mapa{
+  font-weight: bold;
+  color:#5D4037;
+}
+
+/* Inicio do footer */
+
+.footer_pai {
+  margin-top: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer_filho{
+  display: flex;
+  justify-content: space-around;
+  padding: 11px;
+}
+.footer_inicio {
+  max-width: 300px;
+}
+.footer_direitos {
+  color: white;
+  background-color: #444;
+  text-align: center;
+  padding: 10px 0;
+}
+.redesocial{
+  font-size: 18px;
+  padding: 1px;
+  color: #ffffff;
+}
+.redesocial:hover{
+  color: #ff0000;
+}
