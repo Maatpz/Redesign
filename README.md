@@ -7,5 +7,5 @@ Trabalho segundo periodo com o foco principal criação de um acordoen,radio,sel
 # Tecnologia usada
 Html/css/js
 
-# Crido por
+# Criado por
 @Maatpz
