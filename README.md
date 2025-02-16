@@ -1,6 +1,9 @@
 # Redesign
 Redesign do site https://deliciasdacarn8.wixsite.com/meusite
 
+# Hospedagem
+Usando vercel para hospedagem https://redesign-beige.vercel.app/
+
 # sobre
 Trabalho segundo periodo com o foco principal criação de um acordoen,radio,select/dropdown funcional usando js.
 
